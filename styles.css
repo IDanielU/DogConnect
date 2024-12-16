@@ -1,0 +1,213 @@
+
+body {
+  font-family: "Montserrat";
+
+}
+/* Styling the title section */
+#title {
+  background-color: #ff4c68;
+  padding: 3rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* Title text styling */
+#title h1 {
+  font-size: 3.5rem; /* title font size */
+  /* color: #333; /* text color dark */
+  color: #fff;    /* text color white */
+  margin-bottom: 1.5rem;  /* space below the title */
+  margin-top: 1.5rem;
+}
+
+/* Button group styles */
+.button-group .btn {
+  margin-right: 1rem; /* spaces in bw buttons */
+  margin-bottom: 1rem; /* space below buttons on small screens */
+}
+
+/* Image phone styling */
+#title-image img {
+  max-width: 80%: /* limit image width */
+  height: auto; /* Aspect ratio maintenance */
+  margin-top: 1rem; /* space above image on smaller screens */
+  right: -5%;
+}
+
+.phone-image {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: -70px; /* This momves the image closer to the feature section  */
+  z-index: -1; /* Hides the bottom of the phone image behind the feature section */
+  margin-top: -50px; /* Creates overlap effect for larger screens */
+}
+
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 15px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-light";
+}
+
+.img-fluid {
+  width: 45%;
+  transform: rotate(25deg);
+}
+
+#features {
+  background-color: #ffffff;
+  padding: 3rem 0;
+  position: relative;
+  z-index: 1;
+  margin-top: -100px; /* Slight overlap of the title and feature section */
+}
+
+.feature-division {
+  padding: 1.5rem;
+  border: 1px solid #ddd; /* To Add borders to visually separate features, though optional */
+  border-radius: 5px;
+  margin-bottom: 1.5rem; /* Space between rows for smaller screens */
+}
+
+.feature-division h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333; /* Darker text color */
+}
+
+.feature-division p {
+  font-size: 1rem;
+  color: #666; /* Lighter text color */
+}
+
+/* Icon Styling */
+.feature-icon {
+  font-size: 3rem;
+  color: #f77f00; /* Orange-like color */
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.feature-icon:hover {
+  color: #ff4c68; /* Color to change to when hovered */
+}
+
+#testimonials {
+  text-align: center;
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.testimonial-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+#press {
+  background-color: #ff4c68;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.press-logo {
+  width: 17%;
+  margin: 20px 20px 30px;
+}
+
+#pricing {
+  padding: 50px;
+  text-align: center;
+}
+
+/* Response Section */
+#rs {
+  background-color: #ff4c68;
+  color: #fff;
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.rs-heading {
+  font-family: "Montserrat-black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* Styling of Footer Section starts here */
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+#footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 20px;
+}
+
+#footer p {
+  margin: 1px 0; /* Reduce top and bottom margin */
+}
+
+.footer-icon {
+  font-size: 24px;
+  margin: 0 10px; /* Spacing between icons */
+  color: #4a4a4a; /* Default icon color */
+}
+
+.footer-icon:hover {
+  color: #ff4c68; /* Change color on hover */
+}
+
+.footer-icon {
+  margin: 20px 10px;
+  color: #4a4a4a; /* Default icon color */
+  font-size: 24px;
+}
+/* Adjust stacking */
+#title .phone-image {
+  z-index: -1; /* Sends the bottom portion of the phone image behind the feature section */
+}
+
+.footer-icon:hover {
+  color: #ff4c68; /* Change color on hover */
+}
+
+/* Responsive Design - Media Query for Small Screens */
+@media (max-width: 768px) {
+  #title {
+    text-align: center;
+  }
+  .phone-image {
+    z-index: 1; /* Brings the image above the feature section */
+    margin-top: 0; /* Removes overlap */
+    transform: rotate(0);
+  }
+
+  #features {
+    margin-top: 0; /* Removes overlap effect on smaller screens */
+  }
+}
